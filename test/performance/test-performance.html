@@ -20,6 +20,10 @@
         #case3-blocked {
             background: url(about:blank);
         }
+
+		.case6-marker::before {
+			content: "test"
+		}
 	</style>
 	<div id="container" class="container">
 
@@ -68,16 +72,22 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
+
+		<div id="case6">
+			<div id="case6-blocked">
+				<div class="case6-marker"></div>
+			</div>
+		</div>
 
 		<script src="../qunit/qunit-2.0.1.js"></script>
-		<script src="../../dist/sizzle.patched.js"></script>
-		<script src="../../dist/utils.js"></script>
-		<script src="../../dist/extended-css-parser.js"></script>
-		<script src="../../dist/style-property-matcher.js"></script>
-		<script src="../../dist/style-observer.js"></script>
-		<script src="../../dist/extended-css-selector.js"></script>
-		<script src="../../dist/extended-css.js"></script>
+		<script src="../../lib/sizzle.patched.js"></script>
+		<script src="../../lib/utils.js"></script>
+		<script src="../../lib/extended-css-parser.js"></script>
+		<script src="../../lib/style-property-matcher.js"></script>
+		<script src="../../lib/style-observer.js"></script>
+		<script src="../../lib/extended-css-selector.js"></script>
+		<script src="../../lib/extended-css.js"></script>
 		<script src="test-performance.js"></script>
 </body>
 
