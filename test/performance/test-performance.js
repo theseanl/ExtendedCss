@@ -30,6 +30,9 @@ QUnit.test("Case 1. :has performance", function(assert) {
     var selectorText = ".container #case1 div div:has(.banner)";
     var selector = new ExtendedSelector(selectorText);
     testPerformance(selector, assert);
+
+    Profiler.print();
+    Profiler.clear();
 });
 
 QUnit.test("Case 2. :contains performance", function(assert) {
@@ -64,4 +67,6 @@ QUnit.test("Case 6. :properties selector", function(assert) {
     var selector = new ExtendedSelector(selectorText);
 
     testPerformance(selector, assert);
+    Profiler.print();
+    Profiler.clear();
 });
